@@ -106,6 +106,12 @@ export default function Home() {
           <h2 className="mt-3 font-heading text-3xl tracking-tight text-foreground sm:text-4xl">
             Customers are already looking. The question is what they find.
           </h2>
+          <p className="mt-4 text-muted-foreground">
+            Digital marketing isn&apos;t a trend anymore, it&apos;s just how
+            business works now. Nearly 9 in 10 businesses call an online
+            presence essential, and the ones that treat it that way are the
+            ones still growing.
+          </p>
         </div>
         <div className="grid gap-10 sm:grid-cols-3">
           {STATS.map(({ stat, description }) => (
