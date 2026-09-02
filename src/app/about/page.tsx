@@ -1,0 +1,164 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+
+export const metadata: Metadata = {
+  title: "About | The Orchard",
+  description: "The story behind The Orchard.",
+};
+
+export default function AboutPage() {
+  return (
+    <div>
+      <section className="mx-auto max-w-4xl px-6 pb-12 pt-16 sm:pt-24">
+        <Badge
+          variant="secondary"
+          className="mb-6 rounded-full px-3 py-1 text-xs font-medium tracking-wide text-secondary-foreground uppercase"
+        >
+          About
+        </Badge>
+        <h1 className="max-w-2xl font-heading text-4xl leading-[1.1] tracking-tight text-foreground sm:text-5xl">
+          Garrett Applegate, the person behind The Orchard.
+        </h1>
+        <p className="mt-6 max-w-xl text-lg text-muted-foreground">
+          I&apos;m a Piedmont Triad local who works in digital marketing for
+          small businesses. Not a logo on an agency site, just someone who
+          actually cares whether your business grows.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-6 py-10">
+        <div className="grid gap-10 sm:grid-cols-[1fr_2fr]">
+          <span className="text-xs font-medium uppercase tracking-wide text-accent">
+            How I got here
+          </span>
+          <div className="space-y-4 text-base leading-relaxed text-foreground/90">
+            <p>
+              I found my way here almost by accident. While I was still in
+              school, I had a side job and realized I genuinely loved
+              building websites, and even more, I loved the idea of helping
+              local businesses actually get found. That turned concrete
+              during my capstone project at UNCW, where I researched how
+              much revenue local businesses lose every year from not having
+              a Google Business Profile or a website at all. Seeing that
+              number in writing is what turned a side interest into The
+              Orchard.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-6 py-10">
+        <div className="grid gap-10 sm:grid-cols-[1fr_2fr]">
+          <span className="text-xs font-medium uppercase tracking-wide text-accent">
+            Why &quot;The Orchard&quot;
+          </span>
+          <div className="space-y-4 text-base leading-relaxed text-foreground/90">
+            <p>
+              It&apos;s a play on my last name, Applegate. But it&apos;s also
+              how I work: you can plant a single apple tree and hope it does
+              well on its own, or you can build an orchard, something
+              structured, tended, and planned. That structure is what turns
+              effort into a business that actually grows, and it&apos;s what
+              I want to build with every client.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-6 py-10">
+        <div className="grid gap-10 sm:grid-cols-[1fr_2fr]">
+          <span className="text-xs font-medium uppercase tracking-wide text-accent">
+            Who I work best with
+          </span>
+          <div className="space-y-4 text-base leading-relaxed text-foreground/90">
+            <p>
+              Usually it&apos;s a small business with little to no online
+              presence. Not because the owner doesn&apos;t care, but because
+              they&apos;ve been too busy running the business to think about
+              it, and they&apos;re hitting a wall where an online presence
+              has quietly become essential.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-border bg-secondary/40">
+        <div className="mx-auto max-w-4xl px-6 py-14">
+          <Card className="border-border/80 bg-card">
+            <CardContent className="pt-2">
+              <span className="text-xs font-medium uppercase tracking-wide text-accent">
+                A win I&apos;m proud of
+              </span>
+              <p className="mt-4 text-lg leading-relaxed text-foreground/90">
+                &ldquo;One of the projects I&apos;m proudest of was taking a
+                business still running on paper, over 7,000 physical files,
+                and converting the entire system digital. That&apos;s the
+                kind of work that doesn&apos;t show up on a homepage, but
+                it&apos;s the difference between a business that survives
+                and one that scales.&rdquo;
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-6 py-10">
+        <div className="grid gap-10 sm:grid-cols-[1fr_2fr]">
+          <span className="text-xs font-medium uppercase tracking-wide text-accent">
+            What makes this different
+          </span>
+          <div className="space-y-4 text-base leading-relaxed text-foreground/90">
+            <p>
+              I was raised right here in the Piedmont Triad, in
+              Kernersville. I&apos;m not a faceless agency, I&apos;m someone
+              just starting out, building The Orchard alongside the
+              businesses I work with. It&apos;s mutual: they&apos;re helping
+              me grow a business, and I&apos;m helping them gain the
+              visibility theirs deserves.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-6 py-10">
+        <div className="grid gap-10 sm:grid-cols-[1fr_2fr]">
+          <span className="text-xs font-medium uppercase tracking-wide text-accent">
+            Background
+          </span>
+          <div className="space-y-4 text-base leading-relaxed text-foreground/90">
+            <p>
+              I&apos;m a 2026 UNCW graduate with a degree in Marketing and
+              Business Development. But I&apos;ve been running businesses
+              since high school, buying and reselling sneakers and clothing.
+              I&apos;ve always made my own money and always wanted to work
+              for myself. The discipline isn&apos;t new, it&apos;s just who
+              I am.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-border">
+        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-6 py-16 sm:flex-row sm:items-center">
+          <div>
+            <h2 className="font-heading text-3xl tracking-tight text-foreground sm:text-4xl">
+              Want to talk it through?
+            </h2>
+            <p className="mt-2 max-w-md text-muted-foreground">
+              No pitch, just a conversation about where your business is and
+              where it needs to go.
+            </p>
+          </div>
+          <Button size="lg" nativeButton={false} render={<Link href="/contact" />}>
+            Book a call
+            <ArrowUpRight className="ml-1 h-4 w-4" />
+          </Button>
+        </div>
+      </section>
+    </div>
+  );
+}
