@@ -25,6 +25,24 @@ const PILLARS = [
   },
 ];
 
+const STATS = [
+  {
+    stat: "99%",
+    description:
+      "of consumers use Google or Maps to find a nearby business, and nearly half buy within 48 to 72 hours of that search.",
+  },
+  {
+    stat: "88%",
+    description:
+      "of customers will not come back after a poor online experience, and 31% will not buy from a business with no website at all.",
+  },
+  {
+    stat: "73%",
+    description:
+      "of small businesses now have a website, up from 64% five years ago. The ones without are losing ground to the ones who caught up.",
+  },
+];
+
 const PROCESS = [
   {
     step: "01",
@@ -77,6 +95,29 @@ export default function Home() {
           >
             See services &amp; pricing
           </Button>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="mb-12 max-w-xl">
+          <span className="text-xs font-medium uppercase tracking-wide text-accent">
+            Why it matters
+          </span>
+          <h2 className="mt-3 font-heading text-3xl tracking-tight text-foreground sm:text-4xl">
+            Customers are already looking. The question is what they find.
+          </h2>
+        </div>
+        <div className="grid gap-10 sm:grid-cols-3">
+          {STATS.map(({ stat, description }) => (
+            <div key={stat}>
+              <span className="font-heading text-5xl text-accent">
+                {stat}
+              </span>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                {description}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
 

@@ -36,15 +36,20 @@ export default function AboutPage() {
           </span>
           <div className="space-y-4 text-base leading-relaxed text-foreground/90">
             <p>
-              I found my way here almost by accident. While I was still in
-              school, I had a side job and realized I genuinely loved
-              building websites, and even more, I loved the idea of helping
-              local businesses actually get found. That turned concrete
-              during my capstone project at UNCW, where I researched how
-              much revenue local businesses lose every year from not having
-              a Google Business Profile or a website at all. Seeing that
-              number in writing is what turned a side interest into The
-              Orchard.
+              It started with a trip to the beach. I was looking for a local
+              shop to check out and found one with no website, no social
+              media, not even a Google listing. I hesitated before I ever
+              walked in. As a Business Development major at UNCW, that
+              hesitation stuck with me: the business itself might have been
+              great, but online it looked like it barely existed. That gap
+              between what a business actually offers and how it shows up
+              online became the idea behind The Orchard.
+            </p>
+            <p>
+              I dug into it further during my capstone project, researching
+              how much revenue local businesses lose every year from not
+              having a website or a Google Business Profile at all. That
+              research is what turned the idea into something real.
             </p>
           </div>
         </div>
