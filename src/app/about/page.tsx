@@ -3,7 +3,6 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "About | The Orchard",
@@ -83,26 +82,6 @@ export default function AboutPage() {
               has quietly become essential.
             </p>
           </div>
-        </div>
-      </section>
-
-      <section className="border-y border-border bg-secondary/40">
-        <div className="mx-auto max-w-4xl px-6 py-14">
-          <Card className="border-border/80 bg-card">
-            <CardContent className="pt-2">
-              <span className="text-xs font-medium uppercase tracking-wide text-accent">
-                A win I&apos;m proud of
-              </span>
-              <p className="mt-4 text-lg leading-relaxed text-foreground/90">
-                &ldquo;One of the projects I&apos;m proudest of was taking a
-                business still running on paper, over 7,000 physical files,
-                and converting the entire system digital. That&apos;s the
-                kind of work that doesn&apos;t show up on a homepage, but
-                it&apos;s the difference between a business that survives
-                and one that scales.&rdquo;
-              </p>
-            </CardContent>
-          </Card>
         </div>
       </section>
 
