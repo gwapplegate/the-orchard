@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { getCloudflareContext } from "@opennextjs/cloudflare";
 
-const CONTACT_EMAIL = "gwapplegate@gmail.com";
+const CONTACT_EMAIL = "gwapplegate0@gmail.com";
 
 export async function POST(request: Request) {
   const body = await request.json();
